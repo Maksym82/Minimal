@@ -1,0 +1,24 @@
+/* Utils */
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+/* Base */ 
+@import './base/base';
+@import './base/reset';
+
+/* Components */
+@import './components/footer';
+@import './components/header';
+@import './components/hero';
+
+/* Layout */
+@import './layout/about';
+@import './layout/bestsellers';
+@import './layout/clients-reviews';
+@import './layout/container';
+@import './layout/mobile-menu';
+@import './layout/newsletter';
+@import './layout/our-products';
+@import './layout/price';
+
+
