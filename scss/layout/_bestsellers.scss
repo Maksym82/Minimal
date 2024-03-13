@@ -1,0 +1,172 @@
+/* Bestsellers */
+.bestsellers {
+  padding: 64px 0;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .bestsellers {
+    max-width: 768px;
+    padding: 100px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bestsellers {
+    max-width: 1440px;
+  }
+
+  .bestsellers .container {
+    padding: 0 172px;
+  }
+}
+
+.bestsellers__title {
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+@media screen and (min-width: 768px) {
+  .bestsellers__title {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+}
+
+.photo__box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .photo__box {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box-first-mobile {
+    margin-bottom: 14px;
+  }
+
+  .box-first-tablet {
+    display: none;
+  }
+
+  .box-first-desktop {
+    display: none;
+  }
+
+  .extra {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box-first-mobile {
+    display: none;
+  }
+
+  .box-first-tablet {
+    display: block;
+  }
+
+  .box-first-desktop {
+    display: none;
+  }
+}
+
+.bestsellers__name {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .bestsellers__name {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
+
+.bestsellers__price {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .bestsellers__price {
+    font-size: 18px;
+  }
+}
+
+.box-second-tablet {
+  display: none;
+}
+
+.box-second-desktop {
+  display: none;
+}
+
+.box-second-mobile {
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .photo__list-second {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .box-second-mobile {
+    display: none;
+  }
+
+  .box-second-tablet {
+    display: block;
+  }
+
+  .box-second-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .photo__list-second {
+    gap: 20px;
+    width: 536px;
+  }
+
+  .box-second-mobile {
+    display: none;
+  }
+
+  .box-second-tablet {
+    display: none;
+  }
+
+  .box-second-desktop {
+    display: block;
+  }
+
+  .box-first-mobile {
+    display: none;
+  }
+
+  .box-first-tablet {
+    display: none;
+  }
+
+  .box-first-desktop {
+    display: block;
+  }
+}
