@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div class="header__container">
+        <a class="header__logo-link" href="index.html">
+          <svg class="header__logo">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#About us">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#Our products">Our products</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#Prices">Prices</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#Bestsellers">Bestsellers</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#Reviews">Reviews</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#Contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-menu-open js-open-menu" type="button">
+          <svg class="icon-burger-open">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!--Mobile menu-->
+      <div class="mobile-menu is-hidden js-menu-container">
+        <div class="mobile-menu-container">
+          <button class="burger-menu-close js-close-menu" type="button">
+            <svg class="icon-burger-close">
+              <use href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile__navigation">
+            <ul>
+              <li class="mobile__item">
+                <a class="mobile__link mobile-header-link" href="#About us"
+                  >About us</a
+                >
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link mobile-header-link" href="#Our products"
+                  >Our products</a
+                >
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link mobile-header-link" href="#Prices"
+                  >Prices</a
+                >
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link mobile-header-link" href="#Bestsellers"
+                  >Bestsellers</a
+                >
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link mobile-header-link" href="#Reviews"
+                  >Reviews</a
+                >
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link mobile-header-link" href="#Contacts"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Hero-->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrap">
+            <h1 class="hero__title">Modern and minimalist furniture for you</h1>
+            <div class="hero__block">
+              <p class="hero__text">
+                Add a touch of elegance to your space with handcrafted furniture
+                pieces
+              </p>
+              <a class="hero__button" href="#newsletter">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About-->
+      <section class="about" id="About us">
+        <div class="about__wrap">
+          <div class="container">
+            <h2 class="about__title">About us</h2>
+            <h3 class="about__subtitle">
+              Our сraftsmanship: сreating unique handmade furniture
+            </h3>
+            <p class="about__description">
+              Discover the inspiration behind our modern and minimalist designs,
+              and see how we bring them to life through our skilled
+              craftsmanship.
+            </p>
+            <ul class="about__list">
+              <li class="about__item">
+                <div class="about__achievements">5+</div>
+                <p class="about__achievements-text">
+                  Years of experience creating handcrafted furniture
+                </p>
+              </li>
+              <li class="about__item">
+                <div class="about__achievements">100%</div>
+                <p class="about__achievements-text">
+                  Sustainably sourced materials used in all of our furniture
+                </p>
+              </li>
+              <li class="about__item">
+                <div class="about__achievements">500+</div>
+                <p class="about__achievements-text">
+                  Unique furniture designs crafted by our skilled artisans
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img
+            srcset="
+              ./images/about-mobile@1x.jpg 1x,
+              ./images/about-mobile@2x.jpg 2x
+            "
+            src="./images/about-mobile.jpg"
+            alt="white sofa"
+            class="about__img-mobile"
+          />
+          <img
+            srcset="
+              ./images/about-tablet@1x.jpg 1x,
+              ./images/about-tablet@2x.jpg 2x
+            "
+            src="./images/about-tablet.jpg"
+            alt="white sofa"
+            class="about__img-tablet"
+          />
+          <img
+            srcset="
+              ./images/about-desk@1x.jpg 1x,
+              ./images/about-desk@2x.jpg 2x
+            "
+            src="./images/about-desk.jpg"
+            alt="white sofa"
+            class="about__img-desktop"
+          />
+        </div>
+      </section>
+      <!--Price-->
+      <section class="price" id="Prices">
+        <h2 class="price-title visually-hidden">Price</h2>
+        <div class="container price__box">
+          <ul class="price__list">
+            <li class="price__item">
+              <p class="price__name">Chairs</p>
+              <p class="starting-price">from 200₴</p>
+            </li>
+            <li class="price__item">
+              <p class="price__name">Tables</p>
+              <p class="starting-price">from 250₴</p>
+            </li>
+            <li class="price__item">
+              <p class="price__name">Dressers</p>
+              <p class="starting-price">from 300₴</p>
+            </li>
+            <li class="price__item">
+              <p class="price__name">Sofas</p>
+              <p class="starting-price">from 500₴</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Our products-->
+      <section class="our-products" id="Our products">
+        <div class="container">
+          <h2 class="our-products__title">Our products</h2>
+          <ul class="our-products__list">
+            <li class="our-products__item-1">
+              <img
+                srcset="
+                  ./images/our-products-1@1x.jpg 1x,
+                  ./images/our-products-1@2x.jpg 2x
+                "
+                src="./images/our-products-1.jpg"
+                alt="dresser"
+                width="343"
+                class="our-products__img"
+              />
+              <p class="our-products__text">Minimalist storage solutions</p>
+            </li>
+            <li class="our-products__item-2">
+              <img
+                srcset="
+                  ./images/our-products-2@1x.jpg 1x,
+                  ./images/our-products-2@2x.jpg 2x
+                "
+                src="./images/our-products-2.jpg"
+                alt="blue sofa"
+                width="343"
+                class="our-products__img"
+              />
+              <p class="our-products__text">Handcrafted minimalist seating</p>
+            </li>
+            <li class="our-products__item-3">
+              <img
+                srcset="
+                  ./images/our-products-3@1x.jpg 1x,
+                  ./images/our-products-3@2x.jpg 2x
+                "
+                src="./images/our-products-3.jpg"
+                alt="table"
+                width="343"
+                class="our-products__img"
+              />
+              <p class="our-products__text">Sleek and simple tables</p>
+            </li>
+            <li class="our-products__item-4">
+              <img
+                srcset="
+                  ./images/our-products-4@1x.jpg 1x,
+                  ./images/our-products-4@2x.jpg 2x
+                "
+                src="./images/our-products-4.jpg"
+                alt="chair"
+                width="343"
+                class="our-products__img"
+              />
+              <p class="our-products__text">
+                Minimalist seating for every space
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Bestsellers-->
+      <section class="bestsellers" id="Bestsellers">
+        <div class="container">
+          <h2 class="bestsellers__title">Bestsellers</h2>
+          <div class="photo__box">
+            <ul class="photo__list-first">
+              <li class="photo__item-first">
+                <img
+                  srcset="
+                    ./images/best-mobile@1x.jpg 1x,
+                    ./images/best-mobile@2x.jpg 2x
+                  "
+                  src="./images/best-mobile.jpg"
+                  alt="The modern platform bed"
+                  width="343"
+                  class="box-first-mobile"
+                />
+                <img
+                  srcset="
+                    ./images/best-tablet@1x.jpg 1x,
+                    ./images/best-tablet@2x.jpg 2x
+                  "
+                  src="./images/best-tablet.jpg"
+                  alt="The modern platform bed"
+                  width="704"
+                  class="box-first-tablet"
+                />
+                <img
+                  srcset="
+                    ./images/best-desktop@1x.jpg 1x,
+                    ./images/best-desktop@2x.jpg 2x
+                  "
+                  src="./images/best-desktop.jpg"
+                  alt="The modern platform bed"
+                  width="536"
+                  height="489"
+                  class="box-first-desktop"
+                />
+                <h3 class="bestsellers__name">The modern platform bed</h3>
+                <p class="bestsellers__price">750$</p>
+              </li>
+            </ul>
+            <ul class="photo__list-second">
+              <li class="photo__item-second">
+                <img
+                  srcset="
+                    ./images/best-mob@1x.jpg 1x,
+                    ./images/best-mob@2x.jpg 2x
+                  "
+                  src="./images/best-mob.jpg"
+                  alt="The Cozy Lounge Chair"
+                  width="343"
+                  class="box-second-mobile"
+                />
+                <img
+                  srcset="
+                    ./images/best-tab@1x.jpg 1x,
+                    ./images/best-tab@2x.jpg 2x
+                  "
+                  src="./images/best-tab.jpg"
+                  alt="The Cozy Lounge Chair"
+                  width="336"
+                  class="box-second-tablet"
+                />
+                <img
+                  srcset="
+                    ./images/best-desk@1x.jpg 1x,
+                    ./images/best-desk@2x.jpg 2x
+                  "
+                  src="./images/best-desk.jpg"
+                  alt="The Cozy Lounge Chair"
+                  width="258"
+                  class="box-second-desktop"
+                />
+                <h3 class="bestsellers__name">The Cozy Lounge Chair</h3>
+                <p class="bestsellers__price">230$</p>
+              </li>
+              <li class="photo__item-second">
+                <img
+                  srcset="
+                    ./images/best-mob2@1x.jpg 1x,
+                    ./images/best-mob2@2x.jpg 2x
+                  "
+                  src="./images/best-mob2.jpg"
+                  alt="The industrial accent chair"
+                  width="343"
+                  class="box-second-mobile"
+                />
+                <img
+                  srcset="
+                    ./images/best-tab2@1x.jpg 1x,
+                    ./images/best-tab2@2x.jpg 2x
+                  "
+                  src="./images/best-tab2.jpg"
+                  alt="The industrial accent chair"
+                  width="336"
+                  class="box-second-tablet"
+                />
+                <img
+                  srcset="
+                    ./images/best-desk2@1x.jpg 1x,
+                    ./images/best-desk2@2x.jpg 2x
+                  "
+                  src="./images/best-desk2.jpg"
+                  alt="The industrial accent chair"
+                  width="258"
+                  class="box-second-desktop"
+                />
+                <h3 class="bestsellers__name">The industrial accent chair</h3>
+                <p class="bestsellers__price">250$</p>
+              </li>
+              <li class="photo__item-second extra">
+                <img
+                  srcset="
+                    ./images/best-tab3@1x.jpg 1x,
+                    ./images/best-tab3@2x.jpg 2x
+                  "
+                  src="./images/best-tab3.jpg"
+                  alt="The sleek stand"
+                  width="336"
+                  class="box-second-tablet"
+                />
+                <img
+                  srcset="
+                    ./images/best-desk3@1x.jpg 1x,
+                    ./images/best-desk3@2x.jpg 2x
+                  "
+                  src="./images/best-desk3.jpg"
+                  alt="The sleek stand"
+                  width="258"
+                  class="box-second-desktop"
+                />
+                <h3 class="bestsellers__name">The sleek stand</h3>
+                <p class="bestsellers__price">300$</p>
+              </li>
+              <li class="photo__item-second extra">
+                <img
+                  srcset="
+                    ./images/best-tab4@1x.jpg 1x,
+                    ./images/best-tab4@2x.jpg 2x
+                  "
+                  src="./images/best-tab4.jpg"
+                  alt="The minimalist sofa"
+                  width="336"
+                  class="box-second-tablet"
+                />
+                <img
+                  srcset="
+                    ./images/best-desk4@1x.jpg 1x,
+                    ./images/best-desk4@2x.jpg 2x
+                  "
+                  src="./images/best-desk4.jpg"
+                  alt="The minimalist sofa"
+                  width="258"
+                  class="box-second-desktop"
+                />
+                <h3 class="bestsellers__name">The minimalist sofa</h3>
+                <p class="bestsellers__price">650$</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--Clients-reviews-->
+      <section class="clients-reviews" id="Reviews">
+        <div class="container">
+          <h2 class="reviews__title">Clients reviews</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div class="clients__box">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/client1-tablet@1x.jpg 1x,
+                      ./images/client1-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/client1-mobile@1x.jpg 1x,
+                      ./images/client1-mobile@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/client1-tablet.jpg"
+                    alt="Client Alexandra Dream"
+                  />
+                </picture>
+                <div class="clients__information">
+                  <h3 class="clients__name">Alexandra dream</h3>
+                  <p class="clients__reviews">1 week ago</p>
+                </div>
+              </div>
+              <p class="clients__comment">
+                I was blown away by the quality and craftsmanship of the
+                furniture I received from this company. Each piece was unique
+                and beautifully designed, and you can tell that a lot of thought
+                and care goes into every detail.
+              </p>
+            </li>
+
+            <li class="reviews__item extra__second-item">
+              <div class="clients__box">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/client-2-tablet@1x.jpg 1x,
+                      ./images/client-2-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <img
+                    src="./images/client-2-tablet.jpg"
+                    alt="Client James Williams"
+                  />
+                </picture>
+                <div class="clients__information">
+                  <h3 class="clients__name">James Williams</h3>
+                  <p class="clients__reviews">A week ago</p>
+                </div>
+              </div>
+              <p class="clients__comment">
+                The "Minimal" furniture set is a fantastic addition to my home.
+                It boasts a minimalist design, enhancing the feel and look of my
+                living space. The sturdy construction is worth noting too, which
+                speaks volumes about its durability.
+              </p>
+            </li>
+
+            <li class="reviews__item extra__third-item">
+              <div class="clients__box">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/client-3-desktop@1x.jpg 1x,
+                      ./images/client-3-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    src="./images/client-3-desktop.jpg"
+                    alt="Client James Williams"
+                  />
+                </picture>
+                <div class="clients__information">
+                  <h3 class="clients__name">Emily Watson</h3>
+                  <p class="clients__reviews">3 week ago</p>
+                </div>
+              </div>
+              <p class="clients__comment">
+                The "Minimal" furniture set has far exceeded my expectations.
+                The sleek design combined with the high-quality materials have
+                not only added an exceptional aesthetic to my space but also
+                offered an uncompromising standard of comfort.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Newsletter-->
+      <section class="newsletter" id="newsletter">
+        <div class="container">
+          <div>
+            <h2 class="newsletter__title">Newsletter</h2>
+            <p class="newsletter__text">
+              Every week we will send you new designs and information about
+              sales.
+            </p>
+            <form class="form">
+              <div class="form__field">
+                <label class="form__label" for="user-name"> </label>
+                <div class="input__box">
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="name"
+                    id="user-name"
+                    minlength="3"
+                    maxlength="16"
+                    placeholder="Name"
+                    required
+                  />
+                  <span class="span-error">
+                    <svg class="icon-error" width="24" height="24">
+                      <use href="./images/icons.svg#icon-form-error"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="user-email"> </label>
+                <div class="input__box">
+                  <input
+                    class="form__input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="E-mail"
+                    required
+                  />
+                  <span class="span-error">
+                    <svg class="icon-error" width="24" height="24">
+                      <use href="./images/icons.svg#icon-form-error"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              <div class="checkbox">
+                <input
+                  class="checkbox__input visually-hidden"
+                  type="checkbox"
+                  id="user-checkbox"
+                  name="user-newsletter"
+                  required
+                />
+                <label class="checkbox__label" for="user-checkbox">
+                  <span class="checkbox__span">
+                    <svg class="checkbox__icon" width="13" height="13">
+                      <use href="./images/icons.svg#icon-checkbox1"></use>
+                    </svg>
+                  </span>
+                  Agree to subscribe to the newsletter
+                </label>
+              </div>
+              <button class="form__button" type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="newsletter__photo">
+            <picture>
+              <source
+                srcset="
+                  ./images/newsletter-desktop@1x.jpg 1x,
+                  ./images/newsletter-desktop@2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ./images/newsletter-tablet@1x.jpg 1x,
+                  ./images/newsletter-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/newsletter-mobile@1x.jpg 1x,
+                  ./images/newsletter-mobile@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img src="./images/newsletter.jpg" alt="furniture" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer" id="Contacts">
+      <div class="container">
+        <div class="footer__first-container">
+          <div class="footer__first-block">
+            <a class="footer__logo" href="index.html">
+              <svg class="footer__logo-icon">
+                <use href="./images/icons.svg#icon-footer-logo"></use>
+              </svg>
+            </a>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="">About us</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="">Our products</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="">Prices</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="">Bestsellers</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="">Reviews</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social-block">
+            <ul class="footer__social-list">
+              <li class="footer__social-list">
+                <a
+                  class="footer__social-link"
+                  href="https://uk-ua.facebook.com/"
+                  target="_blank"
+                >
+                  <svg class="footer__social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-list">
+                <a
+                  class="footer__social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg class="footer__social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-list">
+                <a
+                  class="footer__social-link"
+                  href="https://www.youtube.com"
+                  target="_blank"
+                >
+                  <svg class="footer__social-icon" width="28" height="28">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__second-container">
+          <div class="footer__address">
+            <ul class="address__list">
+              <li class="footer__address-item">
+                <a
+                  class="address__link"
+                  href="https://maps.app.goo.gl/GXbdFnx1p9cVnK8X8"
+                  target="_blank"
+                >
+                  Obolonsky Prospect, 14, Kyiv</a
+                >
+              </li>
+              <li class="footer__address-item">
+                <p class="address__link">Daily 10:00-21:00</p>
+              </li>
+            </ul>
+
+            <address>
+              <ul class="address__telephone">
+                <li class="telephone__item">
+                  <a class="address__link" href="tel:+380669384758"
+                    >+380669384758</a
+                  >
+                </li>
+                <li class="telephone__item">
+                  <a class="address__link" href="tel:+380679384758"
+                    >+380679384758</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <address class="address__email">
+              <a class="address__link" href="mailto:minimal.furniture@gmail.com"
+                >minimal.furniture@gmail.com</a
+              >
+            </address>
+          </div>
+          <p class="privacy__text">
+            By using this website, you agree to the
+            <a class="privacy__link" href="#" target="_blank"
+              >Terms of Service</a
+            >
+            and
+            <a class="privacy__link" href="#" target="_blank">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
