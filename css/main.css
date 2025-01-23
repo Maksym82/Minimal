@@ -947,6 +947,10 @@ ul {
     line-height: 1.4;
   }
 }
+.clients-reviews__swiper-slide {
+  height: 230px;
+}
+
 @media screen and (min-width: 768px) {
   .reviews__list {
     display: -webkit-box;
