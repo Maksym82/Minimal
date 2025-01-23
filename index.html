@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal</title>
     <!--Favicon-->
-    <link rel="icon" type="image/png" href="./images/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon-96x96.png"
+      sizes="96x96"
+    />
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <!--Styles-->
     <link
@@ -444,99 +454,104 @@
       <section class="clients-reviews" id="Reviews">
         <div class="container">
           <h2 class="reviews__title">Clients reviews</h2>
-          <ul class="reviews__list">
-            <li class="reviews__item">
-              <div class="clients__box">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/client1-tablet@1x.jpg 1x,
-                      ./images/client1-tablet@2x.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    srcset="
-                      ./images/client1-mobile@1x.jpg 1x,
-                      ./images/client1-mobile@2x.jpg 2x
-                    "
-                    media="(min-width: 320px)"
-                  />
-                  <img
-                    src="./images/client1-tablet.jpg"
-                    alt="Client Alexandra Dream"
-                  />
-                </picture>
-                <div class="clients__information">
-                  <h3 class="clients__name">Alexandra dream</h3>
-                  <p class="clients__reviews">1 week ago</p>
+          <div class="clients-reviews swiper">
+            <div class="clients-reviews__swiper-wrapper swiper-wrapper">
+              <!--Slide #1-->
+              <div class="clients-reviews__swiper-slide swiper-slide">
+                <div class="clients__box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/client1-tablet@1x.jpg 1x,
+                        ./images/client1-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/client1-mobile@1x.jpg 1x,
+                        ./images/client1-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/client1-tablet.jpg"
+                      alt="Client Alexandra Dream"
+                    />
+                  </picture>
+                  <div class="clients__information">
+                    <h3 class="clients__name">Alexandra dream</h3>
+                    <p class="clients__reviews">1 week ago</p>
+                  </div>
                 </div>
+                <p class="clients__comment">
+                  I was blown away by the quality and craftsmanship of the
+                  furniture I received from this company. Each piece was unique
+                  and beautifully designed, and you can tell that a lot of
+                  thought and care goes into every detail.
+                </p>
               </div>
-              <p class="clients__comment">
-                I was blown away by the quality and craftsmanship of the
-                furniture I received from this company. Each piece was unique
-                and beautifully designed, and you can tell that a lot of thought
-                and care goes into every detail.
-              </p>
-            </li>
-
-            <li class="reviews__item extra__second-item">
-              <div class="clients__box">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/client-2-tablet@1x.jpg 1x,
-                      ./images/client-2-tablet@2x.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                  />
-
-                  <img
-                    src="./images/client-2-tablet.jpg"
-                    alt="Client James Williams"
-                  />
-                </picture>
-                <div class="clients__information">
-                  <h3 class="clients__name">James Williams</h3>
-                  <p class="clients__reviews">A week ago</p>
-                </div>
+              <!--Slide #2-->
+              <div class="clients-reviews__swiper-slide swiper-slide">
+                  <div class="clients__box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/client-2-tablet@1x.jpg 1x,
+                          ./images/client-2-tablet@2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <img
+                        src="./images/client-2-tablet.jpg"
+                        alt="Client James Williams"
+                      />
+                    </picture>
+                    <div class="clients__information">
+                      <h3 class="clients__name">James Williams</h3>
+                      <p class="clients__reviews">A week ago</p>
+                    </div>
+                  </div>
+                  <p class="clients__comment">
+                    The "Minimal" furniture set is a fantastic addition to my
+                    home. It boasts a minimalist design, enhancing the feel and
+                    look of my living space. The sturdy construction is worth
+                    noting too, which speaks volumes about its durability.
+                  </p>
+              </div>  
+              <!--Slide #3-->
+              <div class="clients-reviews__swiper-slide swiper-slide">
+                
+                  <div class="clients__box">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/client-3-desktop@1x.jpg 1x,
+                          ./images/client-3-desktop@2x.jpg 2x
+                        "
+                        media="(min-width: 1440px)"
+                      />
+                      <img
+                        src="./images/client-3-desktop.jpg"
+                        alt="Client James Williams"
+                      />
+                    </picture>
+                    <div class="clients__information">
+                      <h3 class="clients__name">Emily Watson</h3>
+                      <p class="clients__reviews">3 week ago</p>
+                    </div>
+                  </div>
+                  <p class="clients__comment">
+                    The "Minimal" furniture set has far exceeded my
+                    expectations. The sleek design combined with the
+                    high-quality materials have not only added an exceptional
+                    aesthetic to my space but also offered an uncompromising
+                    standard of comfort.
+                  </p>
+                </li>
               </div>
-              <p class="clients__comment">
-                The "Minimal" furniture set is a fantastic addition to my home.
-                It boasts a minimalist design, enhancing the feel and look of my
-                living space. The sturdy construction is worth noting too, which
-                speaks volumes about its durability.
-              </p>
-            </li>
-
-            <li class="reviews__item extra__third-item">
-              <div class="clients__box">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/client-3-desktop@1x.jpg 1x,
-                      ./images/client-3-desktop@2x.jpg 2x
-                    "
-                    media="(min-width: 1440px)"
-                  />
-                  <img
-                    src="./images/client-3-desktop.jpg"
-                    alt="Client James Williams"
-                  />
-                </picture>
-                <div class="clients__information">
-                  <h3 class="clients__name">Emily Watson</h3>
-                  <p class="clients__reviews">3 week ago</p>
-                </div>
-              </div>
-              <p class="clients__comment">
-                The "Minimal" furniture set has far exceeded my expectations.
-                The sleek design combined with the high-quality materials have
-                not only added an exceptional aesthetic to my space but also
-                offered an uncompromising standard of comfort.
-              </p>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
       <!--Newsletter-->
@@ -754,7 +769,8 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>~
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/scrollup.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
