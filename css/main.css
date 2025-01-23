@@ -948,7 +948,13 @@ ul {
   }
 }
 .clients-reviews__swiper-slide {
-  height: 230px;
+  width: 288px;
+  height: 240px;
+}
+@media (min-width: 768px) {
+  .clients-reviews__swiper-slide {
+    height: 290px;
+  }
 }
 
 @media screen and (min-width: 768px) {
