@@ -7,14 +7,9 @@ const swiper = new Swiper('.slider-clients-reviews', {
   slidesPerView: 1,
   spaceBetween: 10,
 
-  // If we need pagination
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
 
   breakpoints: {
-    // when window width is >= 530px
+    // when window width is >= 590px
     590: {
       slidesPerView: 2,
       spaceBetween: 20,
@@ -24,7 +19,7 @@ const swiper = new Swiper('.slider-clients-reviews', {
       slidesPerView: 2,
       spaceBetween: 50,
     },
-    // when window width is >= 1280px
+    // when window width is >= 1440px
     1440: {
       slidesPerView: 3,
       spaceBetween: 120,
