@@ -1559,12 +1559,37 @@ input::placeholder {
 #scrollToTop {
   position: fixed;
   bottom: 40px;
-  right: 20px;
+  left: 75%;
   display: none;
   cursor: pointer;
   z-index: 15;
-  background-color: rgba(205, 211, 221, 0.5);
+  background-color: rgba(205, 211, 221, 0.6);
   border-radius: 8px;
+}
+@media (min-width: 500px) {
+  #scrollToTop {
+    left: 68%;
+  }
+}
+@media (min-width: 700px) {
+  #scrollToTop {
+    left: 64%;
+  }
+}
+@media (min-width: 768px) {
+  #scrollToTop {
+    left: 80%;
+  }
+}
+@media (min-width: 1075px) {
+  #scrollToTop {
+    left: 72%;
+  }
+}
+@media (min-width: 1440px) {
+  #scrollToTop {
+    left: 86%;
+  }
 }
 
 .scroll-up {
