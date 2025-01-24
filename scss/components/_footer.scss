@@ -97,12 +97,19 @@
   font-size: 16px;
   color: var(--color-white);
   text-decoration: none;
+  transition: color 0.3s linear;
 }
 
 @media screen and (min-width: 768px) {
   .footer__nav-link {
     font-size: 18px;
   }
+}
+
+.footer__nav-link:hover,
+.footer__nav-link:focus {
+  text-decoration: underline;
+  color: #4de2e7;
 }
 
 .footer__social-list {
@@ -177,12 +184,19 @@
   text-decoration: none;
   font-style: normal;
   margin-bottom: 0;
+  transition: color 0.3s linear;
 }
 
 @media screen and (min-width: 768px) {
   .address__link {
     font-size: 19px;
   }
+}
+
+.address__link:hover,
+.address__link:focus {
+  text-decoration: underline;
+  color: #4de2e7;
 }
 
 .address__telephone {
@@ -251,4 +265,10 @@
 .privacy__link {
   color: currentColor;
   text-decoration: underline;
+  transition: color 0.3s linear;
+}
+
+.privacy__link:hover,
+.privacy__link:focus {
+  color: #4de2e7;
 }
