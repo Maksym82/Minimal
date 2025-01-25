@@ -1414,6 +1414,10 @@ input::placeholder {
     margin-bottom: 30px;
   }
 }
+.our-products__swiper-slide {
+  height: 390px;
+}
+
 .our-products__text {
   font-size: 16px;
   margin-top: 16px;
@@ -1424,40 +1428,6 @@ input::placeholder {
   .our-products__text {
     font-size: 18px;
     margin-top: 15px;
-  }
-}
-.our-products__item-2 {
-  display: none;
-}
-
-.our-products__item-3 {
-  display: none;
-}
-
-.our-products__item-4 {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .our-products__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 16px;
-  }
-  .our-products__item-2 {
-    display: block;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .our-products__list {
-    gap: 24px;
-  }
-  .our-products__item-3 {
-    display: block;
-  }
-  .our-products__item-4 {
-    display: block;
   }
 }
 /* Price */

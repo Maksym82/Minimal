@@ -7,7 +7,6 @@ const swiper = new Swiper('.slider-clients-reviews', {
   slidesPerView: 1,
   spaceBetween: 10,
 
-
   breakpoints: {
     // when window width is >= 590px
     590: {
