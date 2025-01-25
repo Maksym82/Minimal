@@ -229,21 +229,24 @@
       <section class="our-products" id="Our products">
         <div class="container">
           <h2 class="our-products__title">Our products</h2>
-          <ul class="our-products__list">
-            <li class="our-products__item-1">
-              <img
-                srcset="
-                  ./images/our-products-1@1x.jpg 1x,
-                  ./images/our-products-1@2x.jpg 2x
-                "
-                src="./images/our-products-1.jpg"
-                alt="dresser"
-                width="343"
-                class="our-products__img"
-              />
-              <p class="our-products__text">Minimalist storage solutions</p>
-            </li>
-            <li class="our-products__item-2">
+          <div class="slider-our-products swiper">
+            <div class="swiper-wrapper">
+              <!--Card #1-->
+              <div class="our-products__swiper-slide swiper-slide">
+                <img
+                  srcset="
+                    ./images/our-products-1@1x.jpg 1x,
+                    ./images/our-products-1@2x.jpg 2x
+                  "
+                  src="./images/our-products-1.jpg"
+                  alt="dresser"
+                  width="343"
+                  class="our-products__img"
+                />
+                <p class="our-products__text">Minimalist storage solutions</p>
+              </div>
+              <!--Card #2-->
+              <div class="our-products__swiper-slide swiper-slide">
               <img
                 srcset="
                   ./images/our-products-2@1x.jpg 1x,
@@ -255,8 +258,9 @@
                 class="our-products__img"
               />
               <p class="our-products__text">Handcrafted minimalist seating</p>
-            </li>
-            <li class="our-products__item-3">
+              </div>
+              <!--Card #3-->
+              <div class="our-products__swiper-slide swiper-slide">
               <img
                 srcset="
                   ./images/our-products-3@1x.jpg 1x,
@@ -268,8 +272,9 @@
                 class="our-products__img"
               />
               <p class="our-products__text">Sleek and simple tables</p>
-            </li>
-            <li class="our-products__item-4">
+              </div>
+              <!--Card #4-->
+              <div class="our-products__swiper-slide swiper-slide">
               <img
                 srcset="
                   ./images/our-products-4@1x.jpg 1x,
@@ -283,8 +288,9 @@
               <p class="our-products__text">
                 Minimalist seating for every space
               </p>
-            </li>
-          </ul>
+              </div>
+            </div> 
+          </div>
         </div>
       </section>
       <!--Bestsellers-->
