@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal</title>
+    <meta 
+      name="description" 
+      content="Discover modern and minimalist handmade furniture crafted from 100% sustainably sourced materials. Upgrade your home with  unique artisan designs today!">
     <!--Favicon-->
     <link
       rel="icon"
@@ -19,26 +22,15 @@
       rel="stylesheet"
     />
     <!--Swiper-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
     <!--Styles-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Header-->
     <header>
       <div class="header__container">
-        <a class="header__logo-link" href="index.html">
+        <a class="header__logo-link" href="index.html" aria-label="icon logo link">
           <svg class="header__logo">
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
@@ -65,7 +57,7 @@
             </li>
           </ul>
         </nav>
-        <button class="burger-menu-open js-open-menu" type="button">
+        <button class="burger-menu-open js-open-menu" type="button" aria-label="icon mobile menu">
           <svg class="icon-burger-open">
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
@@ -669,7 +661,7 @@
       <div class="container">
         <div class="footer__first-container">
           <div class="footer__first-block">
-            <a class="footer__logo" href="index.html">
+            <a class="footer__logo" href="index.html" aria-label="icon logo link">
               <svg class="footer__logo-icon">
                 <use href="./images/icons.svg#icon-footer-logo"></use>
               </svg>
@@ -699,6 +691,7 @@
                   class="footer__social-link"
                   href="https://uk-ua.facebook.com/"
                   target="_blank"
+                  aria-label="icon facebook link"
                 >
                   <svg class="footer__social-icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
@@ -710,6 +703,7 @@
                   class="footer__social-link"
                   href="https://www.instagram.com/"
                   target="_blank"
+                  aria-label="icon instagram link"
                 >
                   <svg class="footer__social-icon">
                     <use href="./images/icons.svg#icon-instagram"></use>
@@ -721,6 +715,7 @@
                   class="footer__social-link"
                   href="https://www.youtube.com"
                   target="_blank"
+                  aria-label="icon youtube link"
                 >
                   <svg class="footer__social-icon" width="28" height="28">
                     <use href="./images/icons.svg#icon-youtube"></use>
@@ -780,9 +775,7 @@
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/scrollup.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/reviews.js" type="module"></script>
+    <script src="./libs/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
