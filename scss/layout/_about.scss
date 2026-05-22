@@ -4,14 +4,6 @@
   padding: 64px 0 0 0;
   margin: 0 auto;
   background-color: var(--color-light-blue);
-
-  &__img-tablet {
-    display: none;
-  }
-
-  &__img-desktop {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -27,15 +19,11 @@
     max-width: 704px;
     background-color: var(--color-light-blue);
   }
+}
 
-  .about__img-mobile {
-    display: none;
-  }
-
-  .about__img-tablet {
-    display: block;
-    margin: 0 auto;
-  }
+.about__img-desktop {
+  display: block;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1440px) {
@@ -48,14 +36,6 @@
     margin: 20px auto;
     padding: 36px 69px 34px;
     max-width: 760px;
-  }
-
-  .about__img-tablet {
-    display: none;
-  }
-
-  .about__img-desktop {
-    display: block;
   }
 }
 

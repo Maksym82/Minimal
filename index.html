@@ -157,7 +157,68 @@
               </li>
             </ul>
           </div>
-          <img
+          <picture>
+            <!-- Desktop 1440 -->
+            <source
+              srcset="
+                ./images/about/about-desk@1x.avif 1x,
+                ./images/about/about-desk@2x.avif 2x
+              "
+              type="image/avif"
+              media="(min-width: 1440px)"
+            >
+            <source
+              srcset="
+                ./images/about/about-desk@1x.webp 1x,
+                ./images/about/about-desk@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 1440px)"
+            >
+            <!-- Tablet -->
+            <source
+              srcset="
+                ./images/about/about-tablet@1x.avif 1x,
+                ./images/about/about-tablet@2x.avif 2x
+              "
+              type="image/avif"
+              media="(min-width: 768px)"
+            >
+            <source
+              srcset="
+                ./images/about/about-tablet@1x.webp 1x,
+                ./images/about/about-tablet@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 768px)"
+            >
+            <!-- Mobile -->
+            <source
+              srcset="
+                ./images/about/about-mobile@1x.avif 1x,
+                ./images/about/about-mobile@2x.avif 2x
+              "
+              type="image/avif"
+            >
+            <source
+              srcset="
+                ./images/about/about-mobile@1x.webp 1x,
+                ./images/about/about-mobile@2x.webp 2x
+              "
+              type="image/webp"
+            >
+            <!-- Fallback для мобильного -->
+            <img 
+              class="about__img-desktop"
+              srcset="
+                ./images/about-mobile@1x.jpg 1x,
+                ./images/about-mobile@2x.jpg 2x
+              "
+              src="./images/about/about-mobile.jpg"
+              alt="white sofa"
+            >
+          </picture>
+          <!-- <img
             srcset="
               ./images/about-mobile@1x.jpg 1x,
               ./images/about-mobile@2x.jpg 2x
@@ -165,8 +226,8 @@
             src="./images/about-mobile.jpg"
             alt="white sofa"
             class="about__img-mobile"
-          />
-          <img
+          /> -->
+          <!-- <img
             srcset="
               ./images/about-tablet@1x.jpg 1x,
               ./images/about-tablet@2x.jpg 2x
@@ -174,8 +235,8 @@
             src="./images/about-tablet.jpg"
             alt="white sofa"
             class="about__img-tablet"
-          />
-          <img
+          /> -->
+          <!-- <img
             srcset="
               ./images/about-desk@1x.jpg 1x,
               ./images/about-desk@2x.jpg 2x
@@ -183,7 +244,7 @@
             src="./images/about-desk.jpg"
             alt="white sofa"
             class="about__img-desktop"
-          />
+          /> -->
         </div>
       </section>
       <!--Price-->
