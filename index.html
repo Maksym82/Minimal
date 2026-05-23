@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal</title>
-    <meta 
-      name="description" 
-      content="Discover modern and minimalist handmade furniture crafted from 100% sustainably sourced materials. Upgrade your home with  unique artisan designs today!">
+    <meta
+      name="description"
+      content="Discover modern and minimalist handmade furniture crafted from 100% sustainably sourced materials. Upgrade your home with  unique artisan designs today!"
+    />
     <!--Favicon-->
     <link
       rel="icon"
@@ -15,7 +16,7 @@
       sizes="96x96"
     />
     <!--Swiper-->
-    <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -23,7 +24,11 @@
     <!--Header-->
     <header>
       <div class="header__container">
-        <a class="header__logo-link" href="index.html" aria-label="icon logo link">
+        <a
+          class="header__logo-link"
+          href="index.html"
+          aria-label="icon logo link"
+        >
           <svg class="header__logo">
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
@@ -31,10 +36,10 @@
         <nav>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#About us">About us</a>
+              <a class="nav__link" href="#Aboutus">About us</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#Our products">Our products</a>
+              <a class="nav__link" href="#Ourproducts">Our products</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#Prices">Prices</a>
@@ -50,7 +55,11 @@
             </li>
           </ul>
         </nav>
-        <button class="burger-menu-open js-open-menu" type="button" aria-label="icon mobile menu">
+        <button
+          class="burger-menu-open js-open-menu"
+          type="button"
+          aria-label="icon mobile menu"
+        >
           <svg class="icon-burger-open">
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
@@ -65,7 +74,11 @@
       <!--Mobile menu-->
       <div class="mobile-menu is-hidden js-menu-container">
         <div class="mobile-menu-container">
-          <button class="burger-menu-close js-close-menu" type="button" aria-label="icon close menu">
+          <button
+            class="burger-menu-close js-close-menu"
+            type="button"
+            aria-label="icon close menu"
+          >
             <svg class="icon-burger-close">
               <use href="./images/icons.svg#icon-mobile-close"></use>
             </svg>
@@ -73,12 +86,12 @@
           <nav class="mobile__navigation">
             <ul>
               <li class="mobile__item">
-                <a class="mobile__link mobile-header-link" href="#About us"
+                <a class="mobile__link mobile-header-link" href="#Aboutus"
                   >About us</a
                 >
               </li>
               <li class="mobile__item">
-                <a class="mobile__link mobile-header-link" href="#Our products"
+                <a class="mobile__link mobile-header-link" href="#Ourproducts"
                   >Our products</a
                 >
               </li>
@@ -124,7 +137,7 @@
         </div>
       </section>
       <!--About-->
-      <section class="about" id="About us">
+      <section class="about" id="Aboutus">
         <div class="about__wrap">
           <div class="container">
             <h2 class="about__title">About us</h2>
@@ -166,7 +179,7 @@
               "
               type="image/avif"
               media="(min-width: 1440px)"
-            >
+            />
             <source
               srcset="
                 ./images/about/about-desk@1x.webp 1x,
@@ -174,7 +187,7 @@
               "
               type="image/webp"
               media="(min-width: 1440px)"
-            >
+            />
             <!-- Tablet -->
             <source
               srcset="
@@ -183,7 +196,7 @@
               "
               type="image/avif"
               media="(min-width: 768px)"
-            >
+            />
             <source
               srcset="
                 ./images/about/about-tablet@1x.webp 1x,
@@ -191,7 +204,7 @@
               "
               type="image/webp"
               media="(min-width: 768px)"
-            >
+            />
             <!-- Mobile -->
             <source
               srcset="
@@ -199,16 +212,16 @@
                 ./images/about/about-mobile@2x.avif 2x
               "
               type="image/avif"
-            >
+            />
             <source
               srcset="
                 ./images/about/about-mobile@1x.webp 1x,
                 ./images/about/about-mobile@2x.webp 2x
               "
               type="image/webp"
-            >
+            />
             <!-- Fallback для мобильного -->
-            <img 
+            <img
               class="about__img-desktop"
               srcset="
                 ./images/about-mobile@1x.jpg 1x,
@@ -216,35 +229,8 @@
               "
               src="./images/about/about-mobile.jpg"
               alt="white sofa"
-            >
+            />
           </picture>
-          <!-- <img
-            srcset="
-              ./images/about-mobile@1x.jpg 1x,
-              ./images/about-mobile@2x.jpg 2x
-            "
-            src="./images/about-mobile.jpg"
-            alt="white sofa"
-            class="about__img-mobile"
-          /> -->
-          <!-- <img
-            srcset="
-              ./images/about-tablet@1x.jpg 1x,
-              ./images/about-tablet@2x.jpg 2x
-            "
-            src="./images/about-tablet.jpg"
-            alt="white sofa"
-            class="about__img-tablet"
-          /> -->
-          <!-- <img
-            srcset="
-              ./images/about-desk@1x.jpg 1x,
-              ./images/about-desk@2x.jpg 2x
-            "
-            src="./images/about-desk.jpg"
-            alt="white sofa"
-            class="about__img-desktop"
-          /> -->
         </div>
       </section>
       <!--Price-->
@@ -272,72 +258,102 @@
         </div>
       </section>
       <!--Our products-->
-      <section class="our-products" id="Our products">
+      <section class="our-products" id="Ourproducts">
         <div class="container">
           <h2 class="our-products__title">Our products</h2>
           <div class="slider-our-products swiper">
             <div class="swiper-wrapper">
               <!--Card #1-->
               <div class="our-products__swiper-slide swiper-slide">
-                <img
-                  srcset="
-                    ./images/our-products-1@1x.jpg 1x,
-                    ./images/our-products-1@2x.jpg 2x
-                  "
-                  src="./images/our-products-1.jpg"
-                  alt="dresser"
-                  width="343"
-                  class="our-products__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/our-products/image-1/our-products-1@1x.avif 1x,
+                      ./images/our-products/image-1/our-products-1@2x.avif 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-products/image-1/our-products-1@1x.webp 1x,
+                      ./images/our-products/image-1/our-products-1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="our-products__img"
+                    srcset="
+                      ./images/our-products/image-1/our-products-1@1x.jpg 1x,
+                      ./images/our-products/image-1/our-products-1@2x.jpg 2x
+                    "
+                    src="./images/our-products/image-1/our-products-1.jpg"
+                    alt="Minimalist storage solutions dresser"
+                  />
+                </picture>
                 <p class="our-products__text">Minimalist storage solutions</p>
               </div>
               <!--Card #2-->
               <div class="our-products__swiper-slide swiper-slide">
-              <img
-                srcset="
-                  ./images/our-products-2@1x.jpg 1x,
-                  ./images/our-products-2@2x.jpg 2x
-                "
-                src="./images/our-products-2.jpg"
-                alt="blue sofa"
-                width="343"
-                class="our-products__img"
-              />
-              <p class="our-products__text">Handcrafted minimalist seating</p>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/our-products/image-2/our-products-2@1x.avif 1x,
+                      ./images/our-products/image-2/our-products-2@2x.avif 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-products/image-2/our-products-2@1x.webp 1x,
+                      ./images/our-products/image-2/our-products-2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="our-products__img"
+                    srcset="
+                      ./images/our-products/image-2/our-products-2@1x.jpg 1x,
+                      ./images/our-products/image-2/our-products-2@2x.jpg 2x
+                    "
+                    src="./images/our-products/image-2/our-products-2.jpg"
+                    alt="blue sofa"
+                  />
+                </picture>
+                <p class="our-products__text">Handcrafted minimalist seating</p>
               </div>
               <!--Card #3-->
               <div class="our-products__swiper-slide swiper-slide">
-              <img
-                srcset="
-                  ./images/our-products-3@1x.jpg 1x,
-                  ./images/our-products-3@2x.jpg 2x
-                "
-                src="./images/our-products-3.jpg"
-                alt="table"
-                width="343"
-                class="our-products__img"
-              />
-              <p class="our-products__text">Sleek and simple tables</p>
+                <img
+                  srcset="
+                    ./images/our-products-3@1x.jpg 1x,
+                    ./images/our-products-3@2x.jpg 2x
+                  "
+                  src="./images/our-products-3.jpg"
+                  alt="table"
+                  width="343"
+                  class="our-products__img"
+                />
+                <p class="our-products__text">Sleek and simple tables</p>
               </div>
               <!--Card #4-->
               <div class="our-products__swiper-slide swiper-slide">
-              <img
-                srcset="
-                  ./images/our-products-4@1x.jpg 1x,
-                  ./images/our-products-4@2x.jpg 2x
-                "
-                src="./images/our-products-4.jpg"
-                alt="chair"
-                width="343"
-                class="our-products__img"
-              />
-              <p class="our-products__text">
-                Minimalist seating for every space
-              </p>
+                <img
+                  srcset="
+                    ./images/our-products-4@1x.jpg 1x,
+                    ./images/our-products-4@2x.jpg 2x
+                  "
+                  src="./images/our-products-4.jpg"
+                  alt="chair"
+                  width="343"
+                  class="our-products__img"
+                />
+                <p class="our-products__text">
+                  Minimalist seating for every space
+                </p>
               </div>
             </div>
-              <!-- If we need scrollbar -->
-              <div class="swiper-scrollbar"></div> 
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </section>
@@ -547,62 +563,59 @@
               </div>
               <!--Slide #2-->
               <div class="clients-reviews__swiper-slide swiper-slide">
-                  <div class="clients__box">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/client-2-tablet@1x.jpg 1x,
-                          ./images/client-2-tablet@2x.jpg 2x
-                        "
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="./images/client-2-tablet.jpg"
-                        alt="Client James Williams"
-                      />
-                    </picture>
-                    <div class="clients__information">
-                      <h3 class="clients__name">James Williams</h3>
-                      <p class="clients__reviews">A week ago</p>
-                    </div>
+                <div class="clients__box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/client-2-tablet@1x.jpg 1x,
+                        ./images/client-2-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/client-2-tablet.jpg"
+                      alt="Client James Williams"
+                    />
+                  </picture>
+                  <div class="clients__information">
+                    <h3 class="clients__name">James Williams</h3>
+                    <p class="clients__reviews">A week ago</p>
                   </div>
-                  <p class="clients__comment">
-                    The "Minimal" furniture set is a fantastic addition to my
-                    home. It boasts a minimalist design, enhancing the feel and
-                    look of my living space. The sturdy construction is worth
-                    noting too, which speaks volumes about its durability.
-                  </p>
-              </div>  
+                </div>
+                <p class="clients__comment">
+                  The "Minimal" furniture set is a fantastic addition to my
+                  home. It boasts a minimalist design, enhancing the feel and
+                  look of my living space. The sturdy construction is worth
+                  noting too, which speaks volumes about its durability.
+                </p>
+              </div>
               <!--Slide #3-->
               <div class="clients-reviews__swiper-slide swiper-slide">
-                
-                  <div class="clients__box">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/client-3-desktop@1x.jpg 1x,
-                          ./images/client-3-desktop@2x.jpg 2x
-                        "
-                        media="(min-width: 1440px)"
-                      />
-                      <img
-                        src="./images/client-3-desktop.jpg"
-                        alt="Client James Williams"
-                      />
-                    </picture>
-                    <div class="clients__information">
-                      <h3 class="clients__name">Emily Watson</h3>
-                      <p class="clients__reviews">3 week ago</p>
-                    </div>
+                <div class="clients__box">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/client-3-desktop@1x.jpg 1x,
+                        ./images/client-3-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1440px)"
+                    />
+                    <img
+                      src="./images/client-3-desktop.jpg"
+                      alt="Client James Williams"
+                    />
+                  </picture>
+                  <div class="clients__information">
+                    <h3 class="clients__name">Emily Watson</h3>
+                    <p class="clients__reviews">3 week ago</p>
                   </div>
-                  <p class="clients__comment">
-                    The "Minimal" furniture set has far exceeded my
-                    expectations. The sleek design combined with the
-                    high-quality materials have not only added an exceptional
-                    aesthetic to my space but also offered an uncompromising
-                    standard of comfort.
-                  </p>
-                </li>
+                </div>
+                <p class="clients__comment">
+                  The "Minimal" furniture set has far exceeded my expectations.
+                  The sleek design combined with the high-quality materials have
+                  not only added an exceptional aesthetic to my space but also
+                  offered an uncompromising standard of comfort.
+                </p>
               </div>
             </div>
             <!-- If we need scrollbar -->
@@ -715,7 +728,11 @@
       <div class="container">
         <div class="footer__first-container">
           <div class="footer__first-block">
-            <a class="footer__logo" href="index.html" aria-label="icon logo link">
+            <a
+              class="footer__logo"
+              href="index.html"
+              aria-label="icon logo link"
+            >
               <svg class="footer__logo-icon">
                 <use href="./images/icons.svg#icon-footer-logo"></use>
               </svg>

@@ -1493,6 +1493,10 @@ input::placeholder {
     margin-top: 15px;
   }
 }
+.our-products__img {
+  margin: 0 auto;
+}
+
 /* Price */
 .price {
   padding: 64px 0;
