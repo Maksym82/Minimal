@@ -599,7 +599,7 @@
                         ./images/reviews/client-1/client1-mobile@1x.jpg 1x,
                         ./images/reviews/client-1/client1-mobile@2x.jpg 2x
                       "
-                      src="./images/client1-tablet.jpg"
+                      src="./images/client1-mobile.jpg"
                       alt="Client Alexandra Dream"
                     />
                   </picture>
@@ -619,15 +619,45 @@
               <div class="clients-reviews__swiper-slide swiper-slide">
                 <div class="clients__box">
                   <picture>
+                    <!-- Tablet -->
                     <source
                       srcset="
-                        ./images/client-2-tablet@1x.jpg 1x,
-                        ./images/client-2-tablet@2x.jpg 2x
+                        ./images/reviews/client-2/client2-tablet@1x.avif 1x,
+                        ./images/reviews/client-2/client2-tablet@2x.avif 2x
                       "
+                      type="image/avif"
                       media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/reviews/client-2/client2-tablet@1x.webp 1x,
+                        ./images/reviews/client-2/client2-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/reviews/client-2/client2-mobile@1x.avif 1x,
+                        ./images/reviews/client-2/client2-mobile@2x.avif 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/reviews/client-2/client2-mobile@1x.webp 1x,
+                        ./images/reviews/client-2/client2-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- Fallback для мобильного -->
                     <img
-                      src="./images/client-2-tablet.jpg"
+                      srcset="
+                        ./images/reviews/client-2/client2-mobile@1x.jpg 1x,
+                        ./images/reviews/client-2/client2-mobile@2x.jpg 2x
+                      "
+                      src="./images/client2-mobile.jpg"
                       alt="Client James Williams"
                     />
                   </picture>
@@ -647,15 +677,45 @@
               <div class="clients-reviews__swiper-slide swiper-slide">
                 <div class="clients__box">
                   <picture>
+                    <!-- Tablet 768 -->
                     <source
                       srcset="
-                        ./images/client-3-desktop@1x.jpg 1x,
-                        ./images/client-3-desktop@2x.jpg 2x
+                        ./images/reviews/client-3/client3-tablet@1x.avif 1x,
+                        ./images/reviews/client-3/client3-tablet@2x.avif 2x
                       "
-                      media="(min-width: 1440px)"
+                      type="image/avif"
+                      media="(min-width: 768px)"
                     />
+                    <source
+                      srcset="
+                        ./images/reviews/client-3/client3-tablet@1x.webp 1x,
+                        ./images/reviews/client-3/client3-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/reviews/client-3/client3-mobile@1x.avif 1x,
+                        ./images/reviews/client-3/client3-mobile@2x.avif 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/reviews/client-3/client3-mobile@1x.webp 1x,
+                        ./images/reviews/client-3/client3-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- Fallback для мобильного -->
                     <img
-                      src="./images/client-3-desktop.jpg"
+                      srcset="
+                        ./images/reviews/client-3/client3-mobile@1x.jpg 1x,
+                        ./images/reviews/client-3/client3-mobile@2x.jpg 2x
+                      "
+                      src="./images/reviews/client-3/"
                       alt="Client James Williams"
                     />
                   </picture>
