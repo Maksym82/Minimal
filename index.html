@@ -561,21 +561,44 @@
               <div class="clients-reviews__swiper-slide swiper-slide">
                 <div class="clients__box">
                   <picture>
+                    <!-- Tablet 768 -->
                     <source
                       srcset="
-                        ./images/client1-tablet@1x.jpg 1x,
-                        ./images/client1-tablet@2x.jpg 2x
+                        ./images/reviews/client-1/client1-tablet@1x.avif 1x,
+                        ./images/reviews/client-1/client1-tablet@2x.avif 2x
                       "
+                      type="image/avif"
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                        ./images/client1-mobile@1x.jpg 1x,
-                        ./images/client1-mobile@2x.jpg 2x
+                        ./images/reviews/client-1/client1-tablet@1x.webp 1x,
+                        ./images/reviews/client-1/client1-tablet@2x.webp 2x
                       "
-                      media="(min-width: 320px)"
+                      type="image/webp"
+                      media="(min-width: 768px)"
                     />
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/reviews/client-1/client1-mobile@1x.avif 1x,
+                        ./images/reviews/client-1/client1-mobile@2x.avif 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/reviews/client-1/client1-mobile@1x.webp 1x,
+                        ./images/reviews/client-1/client1-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- Fallback для мобильного -->
                     <img
+                      srcset="
+                        ./images/reviews/client-1/client1-mobile@1x.jpg 1x,
+                        ./images/reviews/client-1/client1-mobile@2x.jpg 2x
+                      "
                       src="./images/client1-tablet.jpg"
                       alt="Client Alexandra Dream"
                     />
