@@ -810,28 +810,64 @@
 
           <div class="newsletter__photo">
             <picture>
+              <!-- Desktop 1440 -->
               <source
                 srcset="
-                  ./images/newsletter-desktop@1x.jpg 1x,
-                  ./images/newsletter-desktop@2x.jpg 2x
+                  ./images/newsletter/newsletter-desktop@1x.avif 1x,
+                  ./images/newsletter/newsletter-desktop@2x.avif 2x
                 "
+                type="image/avif"
                 media="(min-width: 1440px)"
               />
               <source
                 srcset="
-                  ./images/newsletter-tablet@1x.jpg 1x,
-                  ./images/newsletter-tablet@2x.jpg 2x
+                  ./images/newsletter/newsletter-desktop@1x.webp 1x,
+                  ./images/newsletter/newsletter-desktop@2x.webp 2x
                 "
+                type="image/webp"
+                media="(min-width: 1440px)"
+              />
+              <!-- Tablet 768 -->
+              <source
+                srcset="
+                  ./images/newsletter/newsletter-tablet@1x.avif 1x,
+                  ./images/newsletter/newsletter-tablet@2x.avif 2x
+                "
+                type="image/avif"
                 media="(min-width: 768px)"
               />
               <source
                 srcset="
-                  ./images/newsletter-mobile@1x.jpg 1x,
-                  ./images/newsletter-mobile@2x.jpg 2x
+                  ./images/newsletter/newsletter-tablet@1x.webp 1x,
+                  ./images/newsletter/newsletter-tablet@2x.webp 2x
                 "
-                media="(min-width: 320px)"
+                type="image/webp"
+                media="(min-width: 768px)"
               />
-              <img src="./images/newsletter.jpg" alt="furniture" />
+              <!-- Mobile -->
+              <source
+                srcset="
+                  ./images/newsletter/newsletter-mobile@1x.avif 1x,
+                  ./images/newsletter/newsletter-mobile@2x.avif 2x
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ./images/newsletter/newsletter-mobile@1x.webp 1x,
+                  ./images/newsletter/newsletter-mobile@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <!-- Fallback для мобильного -->
+              <img
+                srcset="
+                  ./images/newsletter/newsletter-mobile@1x.jpg 1x,
+                  ./images/newsletter/newsletter-mobile@2x.jpg 2x
+                "
+                src="./images/newsletter.jpg"
+                alt="furniture"
+              />
             </picture>
           </div>
         </div>
