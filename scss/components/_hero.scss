@@ -4,17 +4,7 @@
   max-width: 375px;
   margin: 0 auto;
   background-color: var(--color-dark-grey);
-  // background-image: url('../images/hero-mobile@1x.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
-
-// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//   .hero {
-//     background-image: url('../images/hero-mobile@2x.jpg');
-//   }
-// }
 
 @media screen and (min-width: 768px) {
   .hero {
@@ -47,19 +37,6 @@
     padding: 0;
     margin-top: 64px;
     margin-bottom: 100px;
-    // background-color: var(--color-white);
-    // background-image: url('../images/hero-tablet-1@1x.jpg'), url('../images/hero-tablet-2@1x.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-size:
-      308px 329px,
-      364px 531px;
-    background-position:
-      0 202px,
-      top right;
-
-    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    //   background-image: url('../images/hero-tablet-1@2x.jpg'), url('../images/hero-tablet-2@2x.jpg');
-    // }
   }
 }
 
@@ -70,23 +47,6 @@
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
-
-    // background-image: url('../images/hero-desk-1@1x.jpg'), url('../images/hero-desk-2@1x.jpg'),
-    //   url('../images/hero-desk-3@1x.jpg');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position:
-      0 202px,
-      top center,
-      top right;
-    background-size:
-      310px 329px,
-      648px 530px,
-      312px 337px;
-
-    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    //   background-image: url('../images/hero-desk-1@2x.jpg'), url('../images/hero-desk-2@2x.jpg'),
-    //     url('../images/hero-desk-3@2x.jpg');
-    // }
   }
 }
 
@@ -108,7 +68,7 @@
   @media (min-width: 768px) {
     display: block;
     position: absolute;
-    left: 0;
+    left: 32px;
     bottom: 186px;
   }
 
@@ -126,12 +86,13 @@
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 32px;
   }
 
   @media (min-width: 1440px) {
     top: 64px;
     left: 395px;
+    right: 0;
   }
 }
 
